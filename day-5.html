@@ -35,6 +35,65 @@
         .text:hover{
             font-size: 40px;
         }
+
+        .box{
+          width: 100px;
+          height: 100px;
+          background-color: greenyellow;
+          transition: width 2s,height 4s;
+          margin-top: 20px;
+        }
+        .box:hover{
+            width: 300px;
+            height: 300px;
+        }
+        .scale{
+          width: 100px;
+          height: 100px;
+          background-color: blueviolet;
+          transition: transform 2s;
+          margin-top: 20px;
+        }
+
+        .scale:hover{
+            transform: scale(1.5);
+        }
+
+        .rotate{
+          width: 100px;
+          height: 100px;
+          background-color: blueviolet;
+          transition: transform 2s;
+          margin-top: 20px;
+        }
+        .rotate:hover{
+            transform: rotate(45deg);
+        }
+
+        .opacity{
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          opacity: 0.5;
+          transition: opacity 2s;
+          margin-top: 20px;
+        }
+        .opacity:hover{
+            opacity: 1;
+        }
+
+        .combine{
+          width: 100px;
+          height: 100px;
+          background-color: blueviolet;
+          transition: all 2s;
+          margin-top: 20px;
+        }
+        .combine:hover{
+            background-color: red;
+            width: 150px;
+            transform: rotate(45deg);
+        }
     </style>
 </head>
 <body>
@@ -47,5 +106,18 @@
      <p class="text">Test string</p>
 
      <!-- height transition -->
+      <div class="box"></div>
+
+      <!-- scale transformation -->
+       <div class="scale"></div>
+
+       <!-- rotation transformation -->
+       <div class="rotate"></div>
+
+       <!-- opacity transition -->
+        <div class="opacity"></div>
+
+        <!-- combine transition -->
+         <div class="combine"></div>
 </body>
 </html>
