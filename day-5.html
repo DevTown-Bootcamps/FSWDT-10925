@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .width-transition{
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          transition: width 4s;
+        }
+        .width-transition:hover{
+            width: 300px;
+        }
+
+        .background{
+            width: 100px;
+          height: 100px;
+          background-color: red;
+          transition: background-color 2s;
+          margin-top: 20px;
+        }
+
+        .background:hover{
+            background-color: blue;
+        }
+
+        .text{
+            font-size: 20px;
+            transition: font-size 5s;
+        }
+
+        .text:hover{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- width transition -->
+     <div class="width-transition"></div>
+     
+     <!-- background transition -->
+     <div class="background"></div>
+
+     <p class="text">Test string</p>
+
+     <!-- height transition -->
+</body>
+</html>
