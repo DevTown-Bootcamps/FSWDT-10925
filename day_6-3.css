@@ -1,0 +1,23 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #fff8f0;
+    color:#333;
+}
+header{
+    background: #ff6f61;
+    padding: 20px;
+    text-align: center;
+}
+.post{
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    color: #333;
+    border-right: 4px solid #ff6f61;
+}
+footer{
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 20px;
+}

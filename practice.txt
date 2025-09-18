@@ -1,0 +1,9 @@
+Create a simple HTML form with name, email, password fields, and a submit button. Style it with CSS.
+
+Build a responsive navigation bar using only HTML and CSS.
+
+Create a 3-column layout using flexbox.
+
+Style an unordered list into a horizontal menu.
+
+Design a card layout with an image, title, and description using CSS.
