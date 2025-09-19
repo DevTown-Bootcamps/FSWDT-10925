@@ -1,0 +1,60 @@
+JS-Functionality of the application
+
+example-> button->click->event to happend->JS
+example-> user data->login/signup page->wrong data-> validate that data->JS
+
+Logic of the functionality->
+
+Syntax of the js(Javascript):
+
+variables:Anything whose value can be changes or cannot be changes.Anything that stores a value.
+a=10; 
+
+Datatype:
+ Numbers
+ Strings
+ Decimals
+ Arrays
+ Objects
+
+Scope of a variables:
+ where exactly can we access a variables, the scope in which a variables can be accessed.
+
+Operators:
+ unary
+ ternary
+
+Conditionals:to run any code based upon the current condition.
+ if statements
+ if else statements
+ if else if else statements
+ nested if statements
+ switch case statements
+
+Loops:Running codes again and again continuosly untill a false condition is achieved.
+ for Loops
+ while Loops
+ do-while Loops
+ map()
+ reduce()
+ filter()
+ for each()
+
+Events:Any set of statements the gets triggered on any particular event.
+ triggered:
+  onClick,
+  oncursormovein
+  oncursormoveout
+  onbuttonclick
+  onkeydown
+  onkeyup
+
+Functions:
+ creation of function
+ calling a function
+
+Asyncronous function:
+ Running multiple tasks simultaneously.
+
+DOM-documentation object module
+ implementing JS in your websites.
