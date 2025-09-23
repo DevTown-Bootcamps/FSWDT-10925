@@ -48,18 +48,49 @@ let c=19;
 
 //logical operators
 
-let age=20;
-let sub=true;
+// let age=20;
+// let sub=true;
 
-if(age>18 && sub){
-    console.log("Allowed");
-}else{
-    console.log("Not allowed");
-}
+// if(age>18 && sub){
+//     console.log("Allowed");
+// }else{
+//     console.log("Not allowed");
+// }
 
 // suppose you have a,b,c variable having numbers , using if else tell me which of the three is biggest number.
 // you have variable a,b- if a>b then perform a/b else perform b/a;
 // you have variable a, if a is greater than 10 then do a/10, if it is greater than 20 then do a/20,
 // and if it is greater than 40 then do a/40;
+
+
+let day=8;
+
+switch(day){
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Sat");
+        break;
+    case 7:
+        console.log("SUN");
+        break;
+    default:
+        console.log("Invalid input");
+    
+}
+
 
 
