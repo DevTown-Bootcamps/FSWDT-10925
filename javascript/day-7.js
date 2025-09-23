@@ -90,19 +90,49 @@ let b=20;
 let c="10";
 
 // loose checking
-console.log(a==c);
+// console.log(a==c);
 
 // Strict checking
-console.log(a===c);
+// console.log(a===c);
 
-console.log(a!==b);
+// console.log(a!==b);
 
-console.log(a<b);
-console.log(a<=b);
-console.log(a>b);
-console.log(a>=b);
+// console.log(a<b);
+// console.log(a<=b);
+// console.log(a>b);
+// console.log(a>=b);
 
 let e=20;
 let f=40;
+let g=50;
+
+
+// logical operators
+
+// OR operator
+
+// true+true=true
+// true+false=true
+// false+true=true
+// false+false=false
+
+// console.log(e>f||f>g);
+// console.log(e<f||f>g);
+// console.log(e>f||f<g);
+// console.log(e<f||f<g);
+
+//AND Operator
+
+// false+false=false
+// false+true=false;
+// true+false=false;
+// true+true=true
+
+console.log(e>f&&f>g);
+console.log(e<f&&f>g);
+console.log(e>f&&f<g);
+console.log(e<f&&f<g);
+
+
 
 
