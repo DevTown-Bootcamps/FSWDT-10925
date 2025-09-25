@@ -26,3 +26,19 @@ let a=[1,2,3,4,5,6,7,8,9];
 //.reduce()
 let sum=a.reduce((total,current)=>total+current,0);
 console.log(sum);
+
+//print all numbers between 10 to 50 tha are divisible by 5.
+a%2===0;
+
+//take a array and compute sum of all even numbers in that array.
+
+let arr=[1,2,3,4,5,6,7,8,9];
+
+let add=0;
+for(let i=0;i<arr.length;i++){
+    if(arr[i]%2===0){
+      add+=arr[i];
+    }
+}
+
+console.log(add);
