@@ -155,5 +155,10 @@ do{
 // }while(i<nums.length)
 
 
+// just print all odd number between 2 to 40
+
+// if(num%2==1) then it is odd
+
+
 
 
