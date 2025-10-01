@@ -42,3 +42,41 @@ console.log(num);
 
 //Try implementing push,pop, shift,unshift,slice
 
+
+//STRING-combination of all alphabets,numbers, and special character
+
+// S T R I N G
+// 0 1 2 3 4 5
+
+let str="String@123";
+console.log(str);
+
+
+// for(let i=0;i<str.length;i++){
+//   console.log(str.charAt(i));
+// }
+
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str.indexOf('7'));
+console.log(str.includes('n'));
+console.log(str.slice(2,6));
+console.log(str.substring(2,6));
+console.log(str.substr(0,5));
+
+let a =" Anshul Ojha ";
+//trim()-removes space from starting and ending of the string
+console.log(a.trim());
+
+let b="used to split a senetence";
+console.log(b.split(" "));
+
+let sname="Anshul";
+let lname="Ojha";
+
+let total=sname+" "+lname;
+
+console.log(total);
+
+
+
