@@ -64,17 +64,42 @@
 // mul(3);
 // mul(2,3);
 
-function sum(...n){
-    let sum=0;
+// function sum(...n){
+//     let sum=0;
 
-    for(let num of n){
-        sum+=num;
-    }
+//     for(let num of n){
+//         sum+=num;
+//     }
 
-    console.log(sum);
-}
+//     console.log(sum);
+// }
 
-sum(1,2,3,4);
-sum(1,2,3,4,5,6,7,8,9);
+// sum(1,2,3,4);
+// sum(1,2,3,4,5,6,7,8,9);
 
 //create a function to take n number of parameters ans perform product of those numbers if they are even.
+
+// function char(){
+//     let name="Anshul";
+
+//     function inner(){
+//         console.log("Hello",name);
+//     }
+
+//     inner();
+// }
+
+// char();
+
+function counter(){
+    let count=0;
+
+    return function(){
+        count++;
+        return count;
+    }
+}
+
+const counter1=counter();
+console.log(counter1());
+console.log(counter1());
