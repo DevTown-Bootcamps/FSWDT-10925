@@ -42,8 +42,39 @@
 
 //create a function to calculate  the cube of a number
 
-const cube = (n)=>{
-    return n*n*n;
+// const cube = (n)=>{
+//     return n*n*n;
+// }
+
+// console.log(cube(3));
+
+// function greet(name="Guest"){
+//     console.log("Hello ",name);
+// }
+
+// greet();
+// greet("Aman");
+
+// function mul(a=1,b=1){
+//     console.log(a*b);
+// }
+
+// mul();
+// mul(2);
+// mul(3);
+// mul(2,3);
+
+function sum(...n){
+    let sum=0;
+
+    for(let num of n){
+        sum+=num;
+    }
+
+    console.log(sum);
 }
 
-console.log(cube(3));
+sum(1,2,3,4);
+sum(1,2,3,4,5,6,7,8,9);
+
+//create a function to take n number of parameters ans perform product of those numbers if they are even.
