@@ -103,3 +103,7 @@ function counter(){
 const counter1=counter();
 console.log(counter1());
 console.log(counter1());
+
+//Write a function to take a number as a prameter and returns its factorial.
+//Write a function that checks the smallest element of an array.
+//Write a function to compute sum of all elements of an array.
