@@ -1,0 +1,42 @@
+Nodejs-backend part- to create services and apis, 
+authentication,data post,data get-apis
+
+Topics:
+
+1) Modules in node-find all prime number,1-1000
+Normal code->module->reuse
+user defined Modules
+pre-defined
+careat-math module.
+
+2)Files systems:
+Reading and writing into a file by using code or Nodejs
+using path module.
+
+3)Events-EventsListener.
+understanding Event loops
+
+5)Http module and creation of server.
+handling routes
+
+6)NPM & package management
+
+7)Expressjs framework
+
+8)Rest API develpoment
+CRUD-Create,read,update,delete,
+How to send JSON data,
+How to test a apis
+
+9) Asynchronous operation
+
+10)Connection to a database
+
+11)Authorization and authentiction
+
+12)Deployment part for the backend.
+
+
+Initialization of node- npm init
+Installing all packeges in your directory-npm install/npm i
+Installing only one module- npm i/install package/modeule name
