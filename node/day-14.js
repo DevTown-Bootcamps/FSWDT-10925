@@ -26,5 +26,8 @@ const fs=require('fs');
 const data=fs.readFileSync('test.txt','utf-8');
 console.log(data);
 
+//create a file and try writing inside the file using writeFile, 
+// then append inside the file and read the file
+
 
 
