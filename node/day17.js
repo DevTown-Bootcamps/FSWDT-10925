@@ -1,8 +1,40 @@
 const express = require('express');
 const app = express();
+const mongoose=require("mongoose");
+const { type } = require('os');
+
 
 // Middleware to parse JSON
 app.use(express.json());
+
+const MONGO_URL="mongodb+srv://devtownanshul:devtown@cluster0.aov9k8b.mongodb.net/todo";
+
+const userSchema=new mongoose.Schema({
+    username:{
+        type:String,
+        requied:true,
+        unique:true
+    },
+    password:{
+        type:String,
+        required:true
+    }
+})
+
+const User=mongoose.model("User",userSchema);
+
+const todoSchema=new mongoose.Schema({
+    title:{
+        type:String,
+        required:true
+    },
+    completed:{
+        type:Boolean,
+        default:false
+    }
+},{timestamps:true});
+
+const Todo=mongoose.model('Todo',todoSchema);
 
 
 //register api
@@ -143,3 +175,6 @@ mongoose.connect(MONGO_URL, {
     });
 })
 .catch(err => console.log("MongoDB connection error", err));
+
+// mongodb+srv://devtownanshul:devtown@cluster0.aov9k8b.mongodb.net/
+// devtown
