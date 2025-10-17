@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const mongoose=require("mongoose");
+const bcrypt=require('bcryptjs');
+const jwt=require('jsonwebtoken');
+const JWT_SECRET="secret";
 const { type } = require('os');
 
 
@@ -36,6 +39,19 @@ const todoSchema=new mongoose.Schema({
 
 const Todo=mongoose.model('Todo',todoSchema);
 
+function authenticationToken(req,res,next){
+    const authHeader=req.Header['authorization'];
+    const token=authHeader && authHeader.split(' ')[1];
+
+    if(!token) return res.status(401).json({message:"Token not found"});
+
+    jwt.verify(token,JWT_SECRET,(err,user=>{
+        if(err) return res.status(403).json({message:"Invalud token"});
+        req.user=user;
+        next();
+    }))
+}
+
 
 //register api
 app.post("/api/register",async(req,res)=>{
@@ -67,11 +83,11 @@ app.post("/api/login",async(req,res)=>{
         const user=await User.findOne({username});
 
         if(!user) return res.status(404).json({message:"The user you are trying to find is not found"});
-
+        
         const isMatch=await bcrypt.compare(password,user.password);
         if(!isMatch) return res.status(400).json({message:"Password did not match"});
 
-        // const token=jwt.sign({id:user._id},JWT_SECRET,{expiresIn:'1h'});
+        const token=jwt.sign({id:user._id},JWT_SECRET,{expiresIn:'1h'});
         res.status(200).json({message:"Login successfull"});
     }catch(err){
         if(err) return res.status(500).json({message:"User login failed"});
